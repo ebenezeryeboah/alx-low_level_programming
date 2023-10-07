@@ -1,25 +1,31 @@
-#include <stdio.h> /* Include the standard I/O header */
-#include <stdlib.h> /* Include the standard library header */
-#include <time.h> /* Include the time header */
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
+/**
+ * main - Entry point
+ * Description: Program to determine if a number is positive, negative, or zero
+ * Return: 0 if successful
+ */
 int main(void)
 {
-    int n;
-    srand(time(0));
-    n = rand() - RAND_MAX / 2;
+	int n;
 
-    if (n > 0)
-    {
-        printf("%d is positive\n", n);
-    }
-    else if (n == 0)
-    {
-        printf("%d is zero\n", n);
-    }
-    else
-    {
-        printf("%d is negative\n", n);
-    }
+	srand(time(0));
+	n = rand() - RAND_MAX / 2;
 
-    return 0;
+	if (n > 0)
+	{
+		printf("%d is positive\n", n);
+	}
+	else if (n == 0)
+	{
+		printf("%d is zero\n", n);
+	}
+	else
+	{
+		printf("%d is negative\n", n);
+	}
+
+	return (0); /* Added parentheses for return value */
 }
