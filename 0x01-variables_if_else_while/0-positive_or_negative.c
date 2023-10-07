@@ -1,6 +1,6 @@
-#include <stdio.h> // Include the standard I/O header
-#include <stdlib.h> // Include the standard library header
-#include <time.h> // Include the time header
+#include <stdio.h> /* Include the standard I/O header */
+#include <stdlib.h> /* Include the standard library header */
+#include <time.h> /* Include the time header */
 
 int main(void)
 {
@@ -21,5 +21,5 @@ int main(void)
         printf("%d is negative\n", n);
     }
 
-    return (0);
+    return 0;
 }
